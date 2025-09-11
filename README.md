@@ -3,7 +3,7 @@
 Welcome to the official GitHub repository for the **WarTeamX LLC** website! 🚀
 
 ## 🧑‍💻 About WarTeamX
-WarTeamX is a cutting-edge software lab startup, building innovative solutions in AI, cloud, and full-stack engineering. Our mission is to empower teams and businesses with modern, scalable, and robust technology.
+WarTeamX is a cutting-edge software lab, building innovative solutions in AI, cloud, and full-stack engineering. Our mission is to empower teams and businesses with modern, scalable, and robust technology.
 
 ## 🌐 This Repository
 This repo contains the source code for the WarTeamX public webpage. Here you'll find:
@@ -31,7 +31,7 @@ We work with:
 - LinkedIn: [WarTeamX](https://linkedin.com/company/warteamx) 💼
 
 ## ©️ License
-© 2024 WarTeamX LLC. All rights reserved.
+© 2025 WarTeamX LLC. All rights reserved.
 
 ---
 
