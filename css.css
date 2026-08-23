@@ -1,240 +1,338 @@
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: linear-gradient(120deg, #232526, #414345);
-            color: #fff;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .container {
-            background: rgba(0,0,0,0.6);
-            padding: 2rem 3rem;
-            border-radius: 16px;
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-            text-align: center;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            letter-spacing: 2px;
-        }
-        p {
-            font-size: 1.3rem;
-            margin-top: 0;
-            color: #b3b3b3;
-        }
-        .stacks {
-            margin-top: 2.5rem;
-            width: 100%;
-            max-width: 700px;
-            background: rgba(0,0,0,0.4);
-            border-radius: 12px;
-            padding: 2rem 1.5rem;
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-        }
-        .stacks h2 {
-            text-align: center;
-            margin-bottom: 1.5rem;
-            font-size: 2rem;
-            letter-spacing: 1px;
-        }
-        .stack-list {
-            display: flex;
-            flex-direction: column;
-            gap: 1.2rem;
-        }
-        .stack-item {
-            background: rgba(255,255,255,0.05);
-            border-radius: 8px;
-            padding: 1rem 1.2rem;
-            box-shadow: 0 2px 8px 0 rgba(241, 2, 206, 0.2);
-        }
-        .stack-item h3 {
-            margin: 0 0 0.3rem 0;
-            font-size: 1.15rem;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-        }
-        .stack-item p {
-            margin: 0;
-            font-size: 1.05rem;
-            color: #e0e0e0;
-        }
-        .contact {
-            margin: 2.5rem auto 0 auto;
-            width: 100%;
-            max-width: 700px;
-            background: rgba(0,0,0,0.4);
-            border-radius: 12px;
-            padding: 1.5rem 1.5rem 1.2rem 1.5rem;
-            box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.10);
-            text-align: center;
-        }
-        .contact h2 {
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-            letter-spacing: 1px;
-        }
-        .contact a {
-            color: #7ecfff;
-            text-decoration: none;
-            font-size: 1.15rem;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-        .contact a:hover {
-            color: #fff;
-            text-decoration: underline;
-        }
-        
-        /* Navigation Links */
-        .nav-links {
-            margin-top: 1rem;
-        }
-        .nav-links a {
-            color: #7ecfff;
-            text-decoration: none;
-            font-size: 1rem;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-        .nav-links a:hover {
-            color: #fff;
-            text-decoration: underline;
-        }
-        
-        /* Labs Section */
-        .labs {
-            margin-top: 2.5rem;
-            width: 100%;
-            max-width: 900px;
-            background: rgba(0,0,0,0.4);
-            border-radius: 12px;
-            padding: 2rem 1.5rem;
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-        }
-        .labs h2 {
-            text-align: center;
-            margin-bottom: 2rem;
-            font-size: 2rem;
-            letter-spacing: 1px;
-        }
-        .labs-list {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            padding: 1rem;
-        }
-        .lab-item {
-            background: rgba(255,255,255,0.05);
-            border-radius: 12px;
-            padding: 1.5rem;
-            box-shadow: 0 4px 16px 0 rgba(241, 2, 206, 0.2);
-            display: flex;
-            gap: 1.5rem;
-            align-items: flex-start;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .lab-item:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px 0 rgba(241, 2, 206, 0.3);
-        }
-        .lab-item.coming-soon {
-            opacity: 0.7;
-        }
-        .lab-emoji {
-            font-size: 3rem;
-            line-height: 1;
-            flex-shrink: 0;
-        }
-        .lab-content {
-            flex: 1;
-        }
-        .lab-content h3 {
-            margin: 0 0 0.5rem 0;
-            font-size: 1.4rem;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-        }
-        .lab-description {
-            font-size: 1.1rem;
-            color: #e0e0e0;
-            margin-bottom: 1rem;
-            line-height: 1.5;
-        }
-        .lab-stacks {
-            margin-bottom: 1rem;
-        }
-        .lab-stacks p {
-            margin: 0.3rem 0;
-            font-size: 0.95rem;
-            color: #b3b3b3;
-        }
-        .lab-stacks strong {
-            color: #fff;
-        }
-        .lab-links {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-        .lab-links a {
-            color: #7ecfff;
-            text-decoration: none;
-            font-size: 1rem;
-            font-weight: 500;
-            padding: 0.5rem 1rem;
-            background: rgba(126, 207, 255, 0.1);
-            border-radius: 6px;
-            transition: all 0.2s;
-        }
-        .lab-links a:hover {
-            color: #fff;
-            background: rgba(126, 207, 255, 0.2);
-            text-decoration: none;
-        }
-        .coming-soon-text {
-            color: #888;
-            font-size: 1rem;
-            font-style: italic;
-            padding: 0.5rem 1rem;
-            background: rgba(136, 136, 136, 0.1);
-            border-radius: 6px;
-        }
-        
-        @media (max-width: 600px) {
-            .container {
-                padding: 1rem;
-            }
-            h1 {
-                font-size: 2rem;
-            }
-            .stacks {
-                padding: 1rem 0.5rem;
-            }
-            .stack-item {
-                padding: 0.7rem 0.5rem;
-            }
-            .contact {
-                padding: 1rem 0.5rem 0.8rem 0.5rem;
-            }
-            .labs {
-                padding: 1.5rem 1rem;
-            }
-            .lab-item {
-                flex-direction: column;
-                gap: 1rem;
-                padding: 1rem;
-            }
-            .lab-emoji {
-                font-size: 2.5rem;
-                text-align: center;
-            }
-            .lab-links {
-                justify-content: center;
-            }
-        }
+:root {
+    --bg-gradient: linear-gradient(120deg, #232526, #414345);
+    --container-bg: rgba(0, 0, 0, 0.6);
+    --section-bg: rgba(0, 0, 0, 0.4);
+    --card-bg: rgba(255, 255, 255, 0.05);
+    --text-primary: #ffffff;
+    --text-secondary: #b3b3b3;
+    --text-body: #e0e0e0;
+    --accent-blue: #7ecfff;
+    --accent-pink: #f102ce;
+    --accent-lime: #39ff14;
+    --accent-orange: #ff5722;
+    --accent-purple: #a020f0;
+    --border-subtle: rgba(255, 255, 255, 0.16);
+    --button-bg: rgba(126, 207, 255, 0.1);
+    --button-hover-bg: rgba(126, 207, 255, 0.2);
+    --muted-bg: rgba(136, 136, 136, 0.14);
+    --chip-text: #111215;
+}
+
+:root[data-theme="light"] {
+    --bg-gradient: linear-gradient(120deg, #f5f7fa, #e4e8f0);
+    --container-bg: rgba(255, 255, 255, 0.85);
+    --section-bg: rgba(255, 255, 255, 0.75);
+    --card-bg: rgba(0, 0, 0, 0.03);
+    --text-primary: #111215;
+    --text-secondary: #60646c;
+    --text-body: #2d3139;
+    --border-subtle: rgba(17, 18, 21, 0.12);
+    --muted-bg: rgba(17, 18, 21, 0.08);
+    --chip-text: #111215;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 2rem 1rem 3rem;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--bg-gradient);
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    transition: background 0.2s, color 0.2s;
+}
+
+.container,
+.stacks,
+.contact,
+.labs,
+.brand-guidelines {
+    width: min(100%, 980px);
+    border-radius: 16px;
+    border: 1px solid var(--border-subtle);
+    background: var(--section-bg);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.24);
+    backdrop-filter: blur(4px);
+    padding: 1.5rem;
+}
+
+.container {
+    background: var(--container-bg);
+    text-align: center;
+}
+
+.logo img {
+    border-radius: 16px;
+}
+
+h1 {
+    font-size: clamp(2rem, 4vw, 2.6rem);
+    margin: 0.8rem 0 0.5rem;
+    letter-spacing: 2px;
+}
+
+h2 {
+    margin: 0 0 1rem;
+    letter-spacing: 1px;
+}
+
+p {
+    margin: 0;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+body > p,
+.stacks > p,
+.lab-description,
+.brand-guidelines p,
+.brand-guidelines li {
+    color: var(--text-body);
+}
+
+.top-bar {
+    display: flex;
+    justify-content: flex-end;
+    width: min(100%, 980px);
+}
+
+.theme-toggle {
+    border: 1px solid var(--accent-blue);
+    border-radius: 999px;
+    background: var(--button-bg);
+    color: var(--text-primary);
+    padding: 0.45rem 0.9rem;
+    cursor: pointer;
+    font: inherit;
+    transition: all 0.2s;
+}
+
+.theme-toggle:hover {
+    background: var(--button-hover-bg);
+    transform: translateY(-2px);
+}
+
+.nav-links {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.7rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 0.9rem;
+    border-radius: 8px;
+    background: var(--button-bg);
+    transition: all 0.2s;
+}
+
+.nav-links a:hover,
+.lab-links a:hover {
+    color: var(--text-primary);
+    background: var(--button-hover-bg);
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.stacks h2,
+.labs h2,
+.brand-guidelines h2 {
+    text-align: center;
+    font-size: 1.9rem;
+}
+
+.stack-list,
+.labs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.stack-item,
+.lab-item,
+.guideline-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    border: 1px solid var(--border-subtle);
+    padding: 1rem 1.1rem;
+    box-shadow: 0 2px 8px 0 rgba(241, 2, 206, 0.2);
+}
+
+.lab-item {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+    transition: all 0.2s;
+}
+
+.lab-item:hover,
+.stack-item:hover,
+.guideline-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px 0 rgba(241, 2, 206, 0.3);
+}
+
+.stack-item h3,
+.lab-content h3 {
+    margin: 0 0 0.4rem;
+    letter-spacing: 0.3px;
+}
+
+.stack-item p,
+.lab-stacks p {
+    color: var(--text-secondary);
+}
+
+.lab-emoji {
+    font-size: 2.3rem;
+    line-height: 1;
+}
+
+.lab-links {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-top: 0.9rem;
+}
+
+.lab-links a,
+.brand-link {
+    color: var(--accent-blue);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.45rem 0.8rem;
+    background: var(--button-bg);
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.coming-soon-text {
+    color: var(--text-secondary);
+    background: var(--muted-bg);
+    border-radius: 8px;
+    padding: 0.45rem 0.8rem;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    margin-top: 0.6rem;
+}
+
+.contact a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.contact a:hover {
+    color: var(--text-primary);
+    text-decoration: underline;
+}
+
+.brand-guidelines {
+    padding: 1.5rem;
+}
+
+.guidelines-grid {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.guideline-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.8rem;
+    font-size: 0.96rem;
+}
+
+.guideline-table th,
+.guideline-table td {
+    border: 1px solid var(--border-subtle);
+    padding: 0.55rem;
+    text-align: left;
+    color: var(--text-body);
+}
+
+.guideline-table th {
+    color: var(--text-primary);
+}
+
+.neon-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin-top: 0.8rem;
+}
+
+.neon-chip {
+    border-radius: 999px;
+    padding: 0.35rem 0.7rem;
+    font-size: 0.92rem;
+    color: var(--chip-text);
+    font-weight: 600;
+}
+
+.neon-chip.blue {
+    background: var(--accent-blue);
+}
+
+.neon-chip.pink {
+    background: var(--accent-pink);
+    color: #fff;
+}
+
+.neon-chip.lime {
+    background: var(--accent-lime);
+}
+
+.neon-chip.orange {
+    background: var(--accent-orange);
+    color: #fff;
+}
+
+.neon-chip.purple {
+    background: var(--accent-purple);
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    color: var(--text-secondary);
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 1.2rem 0.8rem 2rem;
+    }
+
+    .container,
+    .stacks,
+    .contact,
+    .labs,
+    .brand-guidelines {
+        padding: 1rem;
+    }
+
+    .lab-item {
+        flex-direction: column;
+    }
+}

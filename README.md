@@ -8,8 +8,11 @@ WarTeamX is a cutting-edge software lab, building innovative solutions in AI, cl
 ## 🌐 This Repository
 This repo contains the source code for the WarTeamX public webpage. Here you'll find:
 - `index.html` — Main landing page
-- `css.css` — Stylesheet for a clean, modern look
-- `js.js` — JavaScript for interactive features
+- `labs.html` — Labs showcase page
+- `brand.html` — Human-readable brand guidelines page
+- `brand-guidelines.md` — AI-agent brand implementation rules
+- `css.css` — Shared stylesheet with dark/light theme tokens
+- `js.js` — JavaScript for interactive features (theme switch)
 - `CNAME` — Custom domain configuration
 
 ## 🛠️ Tech Stacks
@@ -31,7 +34,7 @@ We work with:
 - LinkedIn: [WarTeamX](https://linkedin.com/company/warteamx) 💼
 
 ## ©️ License
-© 2025 WarTeamX LLC. All rights reserved.
+© 2026 WarTeamX LLC. All rights reserved.
 
 ---
 
