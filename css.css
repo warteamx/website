@@ -15,6 +15,7 @@
     --button-bg: rgba(126, 207, 255, 0.1);
     --button-hover-bg: rgba(126, 207, 255, 0.2);
     --muted-bg: rgba(136, 136, 136, 0.14);
+    --chip-text: #111215;
 }
 
 :root[data-theme="light"] {
@@ -282,7 +283,7 @@ body > p,
     border-radius: 999px;
     padding: 0.35rem 0.7rem;
     font-size: 0.92rem;
-    color: #111215;
+    color: var(--chip-text);
     font-weight: 600;
 }
 
