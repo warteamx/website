@@ -34,7 +34,7 @@ We work with:
 - LinkedIn: [WarTeamX](https://linkedin.com/company/warteamx) 💼
 
 ## ©️ License
-© 2025 WarTeamX LLC. All rights reserved.
+© 2026 WarTeamX LLC. All rights reserved.
 
 ---
 
