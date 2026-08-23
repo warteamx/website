@@ -28,6 +28,7 @@
     --text-body: #2d3139;
     --border-subtle: rgba(17, 18, 21, 0.12);
     --muted-bg: rgba(17, 18, 21, 0.08);
+    --chip-text: #111215;
 }
 
 * {
