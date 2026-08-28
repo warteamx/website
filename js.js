@@ -40,4 +40,29 @@
     } else {
         initThemeToggle();
     }
+
+    // ── Stacks expand/collapse ──────────────────────────────────────
+    function initStacksToggle() {
+        var btn = document.getElementById('stacks-toggle');
+        var more = document.getElementById('stacks-more');
+        if (!btn || !more) return;
+        btn.addEventListener('click', function () {
+            var expanded = btn.getAttribute('aria-expanded') === 'true';
+            if (expanded) {
+                more.hidden = true;
+                btn.setAttribute('aria-expanded', 'false');
+                btn.textContent = 'Show more stacks ▼';
+            } else {
+                more.hidden = false;
+                btn.setAttribute('aria-expanded', 'true');
+                btn.textContent = 'Show less stacks ▲';
+            }
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initStacksToggle);
+    } else {
+        initStacksToggle();
+    }
 })();

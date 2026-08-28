@@ -4,12 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>☠️ WarTeamX</title>
+    <title>☠️ WarTeamX — AI Software Labs</title>
+    <!-- SEO: expanded meta description -->
+    <meta name="description" content="WarTeamX is an open-source AI software lab shipping production-grade applications, cloud-native architectures, and AI-native tools — not tutorials, real engineering.">
     <link rel="stylesheet" href="./css.css">
-    <meta property="og:title" content="☠️ WarTeamX">
-    <meta property="og:description" content="🧪 Open Source AI Software Labs 🧪 ">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="☠️ WarTeamX — AI Software Labs">
+    <meta property="og:description" content="Open-source AI software lab shipping production-grade apps, cloud-native architectures, and AI-native tools.">
     <meta property="og:image" content="./preview.png">
     <meta property="og:url" content="https://warteamx.com">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="☠️ WarTeamX — AI Software Labs">
+    <meta name="twitter:description" content="Open-source AI software lab shipping production-grade apps, cloud-native architectures, and AI-native tools.">
+    <meta name="twitter:image" content="./preview.png">
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
 </head>
 
@@ -18,34 +27,78 @@
         <button id="theme-toggle" class="theme-toggle" type="button">🌗 Theme</button>
     </div>
 
+    <!-- Hero -->
     <div class="container">
         <div class="logo">
-            <img src="./logo.webp" alt="WarTeamX Logo" width="100" height="100">
+            <img src="./logo.webp" alt="WarTeamX skull logo" width="100" height="100">
         </div>
         <h1>WarTeamX</h1>
-        <p>Software Labs</p>
-        <nav class="nav-links">
-            <a href="./labs.html">🧪 View Labs →</a>
-            <a href="./brand.html">🎨 Brand Guidelines</a>
-        </nav>
+        <p class="hero-subtitle">Software Labs</p>
+        <p class="hero-tagline">We build AI-native, cloud-agnostic systems that ship — production-ready from day one, open-source by default, zero corporate fluff.</p>
     </div>
 
-    <section class="stacks">
-        <p>WarTeamX is a <b>software lab</b> building production-ready applications, open-source tools, and cloud-native
-            architectures. We explore AI, RAG, LangChain, and next-generation full-stack development—turning experiments
-            into real-world engineering.</p>
+    <!-- 3-card hub section: Labs · Brand · Blog -->
+    <section class="hub-section" aria-label="Explore WarTeamX">
+        <a href="./labs.html" class="hub-card" aria-label="Labs — explore projects">
+            <span class="hub-icon" aria-hidden="true">🧪</span>
+            <h2 class="hub-title">Labs</h2>
+            <p class="hub-desc">Experimental and production projects with live demos and GitHub links — real apps, not proof-of-concepts.</p>
+            <span class="hub-cta">Explore projects →</span>
+        </a>
+        <a href="./brand.html" class="hub-card" aria-label="Brand — logo, colors and typography guidelines">
+            <span class="hub-icon" aria-hidden="true">🎨</span>
+            <h2 class="hub-title">Brand</h2>
+            <p class="hub-desc">Logo usage, color palette, typography, and voice guidelines — everything you need to stay on-brand.</p>
+            <span class="hub-cta">View guidelines →</span>
+        </a>
+        <!-- NOTE: blog links to external blog.warteamx.com -->
+        <a href="https://blog.warteamx.com/" class="hub-card" target="_blank" rel="noopener noreferrer" aria-label="Blog — technical writing (opens in new tab)">
+            <span class="hub-icon" aria-hidden="true">📝</span>
+            <h2 class="hub-title">Blog</h2>
+            <p class="hub-desc">Technical deep-dives, build logs, and AI/dev notes — written by engineers, for engineers.</p>
+            <span class="hub-cta">Read the blog →</span>
+        </a>
     </section>
 
-    <section class="stacks">
+    <!-- How we work -->
+    <section class="stacks how-we-work" aria-label="How we work">
+        <h2>How We Work</h2>
+        <div class="how-grid">
+            <div class="how-card">
+                <span class="how-icon" aria-hidden="true">🌐</span>
+                <h3>Open-source by default</h3>
+                <p>Everything we build lives on GitHub, designed to be forked, studied, and improved.</p>
+            </div>
+            <div class="how-card">
+                <span class="how-icon" aria-hidden="true">🚀</span>
+                <h3>Production-ready, not PoC</h3>
+                <p>We don't ship demos. Every project targets real-world load, observability, and maintainability.</p>
+            </div>
+            <div class="how-card">
+                <span class="how-icon" aria-hidden="true">🤖</span>
+                <h3>AI-native architecture</h3>
+                <p>LLMs, RAG pipelines, and vector stores are first-class citizens — not bolt-ons.</p>
+            </div>
+            <div class="how-card">
+                <span class="how-icon" aria-hidden="true">☁️</span>
+                <h3>Cloud-agnostic</h3>
+                <p>Runs on GCP, AWS, or your own metal — infrastructure is abstracted, not locked in.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stacks section: primary categories visible, secondary expandable -->
+    <section class="stacks" aria-label="Technology stacks">
         <h2>Stacks</h2>
+        <!-- Primary stacks always visible -->
         <div class="stack-list">
             <div class="stack-item">
                 <h3>🤖 AI Engineering</h3>
-                <p>Python &mdash; <span class="logo">🐍</span> oLLama, HuggingFace 🤗, LangChain 🔗, FastAPI ⚡</p>
+                <p>Python &mdash; 🐍 oLLama, HuggingFace 🤗, LangChain 🔗, FastAPI ⚡</p>
             </div>
             <div class="stack-item">
                 <h3>💻 Frontends</h3>
-                <p>TypeScript &mdash; <span class="logo">🟦</span> Expo 🚀, React Native ⚛️, Next.js ⏭️</p>
+                <p>TypeScript &mdash; 🟦 Expo 🚀, React Native ⚛️, Next.js ⏭️</p>
             </div>
             <div class="stack-item">
                 <h3>🛠️ Backends</h3>
@@ -60,26 +113,34 @@
                 <p>Google Cloud Platform (GCP) 🌐, Amazon Web Services (AWS) ☁️</p>
             </div>
             <div class="stack-item">
-                <h3>🧩 BAAS</h3>
-                <p>Supabase 🟩, Firebase 🔥, Amplify 📢</p>
-            </div>
-            <div class="stack-item">
                 <h3>🔧 DevTools</h3>
-                <p>GitHub 🐙, Docker 🐳, CD/CI (GitHub Actions) ⚙️</p>
-            </div>
-            <div class="stack-item">
-                <h3>📈 Monitoring</h3>
-                <p>Prometheus 📊 + Grafana 📉, K6 load testing</p>
-            </div>
-            <div class="stack-item">
-                <h3>📬 Message Queues</h3>
-                <p>Google Pub/Sub 📡, RabbitMQ 🐇</p>
-            </div>
-            <div class="stack-item">
-                <h3>🏗️ Architecture</h3>
-                <p>Domain Driven Design 🏛️, Microservices 🧩, TDD</p>
+                <p>GitHub 🐙, Docker 🐳, CI/CD (GitHub Actions) ⚙️</p>
             </div>
         </div>
+        <!-- Secondary stacks collapsed by default -->
+        <div class="stacks-more" id="stacks-more" hidden>
+            <div class="stack-list stacks-more-list">
+                <div class="stack-item">
+                    <h3>🧩 BaaS</h3>
+                    <p>Supabase 🟩, Firebase 🔥, Amplify 📢</p>
+                </div>
+                <div class="stack-item">
+                    <h3>📈 Monitoring</h3>
+                    <p>Prometheus 📊 + Grafana 📉, K6 load testing</p>
+                </div>
+                <div class="stack-item">
+                    <h3>📬 Message Queues</h3>
+                    <p>Google Pub/Sub 📡, RabbitMQ 🐇</p>
+                </div>
+                <div class="stack-item">
+                    <h3>🏗️ Architecture</h3>
+                    <p>Domain Driven Design 🏛️, Microservices 🧩, TDD</p>
+                </div>
+            </div>
+        </div>
+        <button class="stacks-toggle" id="stacks-toggle" type="button" aria-expanded="false" aria-controls="stacks-more">
+            Show more stacks ▼
+        </button>
     </section>
 
     <section class="contact">
